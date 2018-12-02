@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBorrowedsTable extends Migration
+class CreateSculpturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBorrowedsTable extends Migration
      */
     public function up()
     {
-        Schema::create('borroweds', function (Blueprint $table) {
+        Schema::create('Sculptures', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateBorrowedsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('borroweds');
+        Schema::dropIfExists('Sculptures');
     }
 }
