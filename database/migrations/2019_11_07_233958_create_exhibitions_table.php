@@ -14,7 +14,13 @@ class CreateExhibitionsTable extends Migration
     public function up()
     {
         Schema::create('exhibitions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('Ex_id');
+            $table->string('Name');
+            $table->date('Start_date');
+            $table->date('End_date');
+            $table->integer('Limit_visit');
+            $table->integer('Booked');
+            $table->string('picture');
             $table->timestamps();
         });
     }

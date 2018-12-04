@@ -13,8 +13,10 @@ class CreateExhibitionHasArtsTable extends Migration
      */
     public function up()
     {
-        Schema::create('exhibition_has_arts', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('exhibition_has_art_objs', function (Blueprint $table) {
+            $table->increments('list_no');
+            $table->integer('exhibition_id');
+            $table->integer('art_obj_Id_no');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateExhibitionHasArtsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('exhibition_has_arts');
+        Schema::dropIfExists('exhibition_has_art_objs');
     }
 }

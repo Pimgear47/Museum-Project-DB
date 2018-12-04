@@ -14,7 +14,9 @@ class CreateExhibitionHasUsersTable extends Migration
     public function up()
     {
         Schema::create('exhibition_has_users', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('list_no');
+            $table->integer('exhibition_id');
+            $table->integer('username_id');
             $table->timestamps();
         });
     }

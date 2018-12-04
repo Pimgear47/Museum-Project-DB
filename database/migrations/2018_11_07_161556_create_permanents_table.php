@@ -14,7 +14,11 @@ class CreatePermanentsTable extends Migration
     public function up()
     {
         Schema::create('permanent_collections', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('art_obj_Id_no');
+            $table->string('Collections_Name');
+            $table->enum('Status', ['on display', 'on loan', 'stored']);
+            $table->date('Date_acquired');
+            $table->float('Cost');
             $table->timestamps();
         });
     }

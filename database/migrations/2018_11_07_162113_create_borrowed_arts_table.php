@@ -14,7 +14,10 @@ class CreateBorrowedArtsTable extends Migration
     public function up()
     {
         Schema::create('borrowed_arts', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('art_obj_Id_no');
+            $table->string('Collections_Name');
+            $table->date('Date_borrowed');
+            $table->date('Date_returned');
             $table->timestamps();
         });
     }

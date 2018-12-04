@@ -14,7 +14,12 @@ class CreateCollectionsTable extends Migration
     public function up()
     {
         Schema::create('collections', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('Coll_id');
+            $table->string('Name');
+            $table->enum('Type', ['personal', 'museum']);
+            $table->longText('Description');
+            $table->string('picture');
+            $table->string('Contact_person_Name');
             $table->timestamps();
         });
     }

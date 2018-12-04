@@ -14,7 +14,9 @@ class CreateStatuesTable extends Migration
     public function up()
     {
         Schema::create('statues', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('art_obj_Id_no');
+            $table->string('Height');
+            $table->string('Weight');
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ class CreatePaintingsTable extends Migration
     public function up()
     {
         Schema::create('paintings', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('art_obj_Id_no');
+            $table->string('Paint_type');
+            $table->string('Drawn_on');
+            $table->string('Style');
             $table->timestamps();
         });
     }

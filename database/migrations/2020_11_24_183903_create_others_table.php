@@ -14,7 +14,9 @@ class CreateOthersTable extends Migration
     public function up()
     {
         Schema::create('others', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('art_obj_Id_no');
+            $table->string('Type');
+            $table->string('Style');
             $table->timestamps();
         });
     }

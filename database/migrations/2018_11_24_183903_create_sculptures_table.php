@@ -14,7 +14,11 @@ class CreateSculpturesTable extends Migration
     public function up()
     {
         Schema::create('sculptures', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('art_obj_Id_no');
+            $table->string('Material');
+            $table->string('Height');
+            $table->string('Weight');
+            $table->string('Style');
             $table->timestamps();
         });
     }

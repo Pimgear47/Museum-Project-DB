@@ -14,7 +14,16 @@ class CreateArtObjsTable extends Migration
     public function up()
     {
         Schema::create('art_objs', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('Id_no');
+            $table->string('Artist');
+            $table->string('Year');
+            $table->string('Title');
+            $table->longText('Description');
+            $table->string('Origin');
+            $table->string('Epoch');
+            $table->string('picture');
+            $table->enum('Type_of_art', ['painting', 'sculpture', 'statue', 'other']);
+            $table->enum('Type_of_coll', ['permanent', 'borrowed', 'donated']);
             $table->timestamps();
         });
     }
