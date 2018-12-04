@@ -13,7 +13,7 @@ class CreatePaintingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('Paintings', function (Blueprint $table) {
+        Schema::create('paintings', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreatePaintingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Paintings');
+        Schema::dropIfExists('paintings');
     }
 }

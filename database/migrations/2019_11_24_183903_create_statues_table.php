@@ -13,7 +13,7 @@ class CreateStatuesTable extends Migration
      */
     public function up()
     {
-        Schema::create('Statues', function (Blueprint $table) {
+        Schema::create('statues', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });

@@ -13,7 +13,7 @@ class CreateSculpturesTable extends Migration
      */
     public function up()
     {
-        Schema::create('Sculptures', function (Blueprint $table) {
+        Schema::create('sculptures', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateSculpturesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Sculptures');
+        Schema::dropIfExists('sculptures');
     }
 }

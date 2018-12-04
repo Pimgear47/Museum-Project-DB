@@ -13,7 +13,7 @@ class CreateOthersTable extends Migration
      */
     public function up()
     {
-        Schema::create('Others', function (Blueprint $table) {
+        Schema::create('others', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateOthersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Others');
+        Schema::dropIfExists('others');
     }
 }

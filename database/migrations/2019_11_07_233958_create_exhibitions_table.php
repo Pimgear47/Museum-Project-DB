@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePermanentsTable extends Migration
+class CreateExhibitionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePermanentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('permanent_collections', function (Blueprint $table) {
+        Schema::create('exhibitions', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreatePermanentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('permanent_collections');
+        Schema::dropIfExists('exhibitions');
     }
 }
