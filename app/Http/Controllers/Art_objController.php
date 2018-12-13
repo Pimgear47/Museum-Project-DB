@@ -125,7 +125,7 @@ class Art_objController extends Controller
             $success = false;
         }
         if($success){
-            return redirect()->back()->with('success','The file is already uploaded. Please wait for permission. Your art will be displayed.');
+            return redirect()->back()->with('success','The file is already uploaded.');
         }
         else{
             return redirect()->back()->with('unsuccess','Something fail.');

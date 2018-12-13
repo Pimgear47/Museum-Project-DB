@@ -49,7 +49,7 @@
     @include('inc.navbar')
     @yield('content')
   </body>
-  <footer>
-  @include('inc.footer')
+  <footer class="py-5 bg-dark">
+    @include('inc.footer')
   </footer>
 </html>

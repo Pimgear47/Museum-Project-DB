@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Donated_collection;
 use App\Art_obj;
 
+
 class DonationController extends Controller
 {
     /**
@@ -107,6 +108,22 @@ class DonationController extends Controller
         if($Art_obj->Type_of_coll == 3){
             $donated_collections = Donated_collection::find($art_obj_Id_no);
             $donated_collections->delete();
+        }
+        if($Art_obj->Type_of_art == 1){
+            $painting = Painting::find($art_obj_Id_no);
+            $painting->delete();
+        }
+        if($Art_obj->Type_of_art == 2){
+            $sculpture = Sculpture::find($art_obj_Id_no);
+            $sculpture->delete();
+        }
+        if($Art_obj->Type_of_art == 3){
+            $statue = Statue::find($art_obj_Id_no);
+            $statue->delete();
+        }
+        if($Art_obj->Type_of_art == 4){
+            $other = Other::find($art_obj_Id_no);
+            $other->delete();
         }
         $id = $art_obj_Id_no;
         $art_objs = Art_obj::find($id);
