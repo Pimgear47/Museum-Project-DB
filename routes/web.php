@@ -25,6 +25,10 @@ Route::resource('other','OtherController');
 Route::resource('artist','ArtistController');
 Route::resource('exhibition','ExhibitionController');
 Route::resource('collection','CollectionController');
+Route::resource('artfromyou','DonationController');
+
+
+// Route::post('artfromyou','DonationController@update');
 
 Route::get('/enroll/{Ex_id}/{id}','ExhibitionHasUserController@store');
 Route::get('/booking/{id}','UserController@show');

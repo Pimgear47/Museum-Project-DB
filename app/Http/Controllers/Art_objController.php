@@ -61,7 +61,7 @@ class Art_objController extends Controller
             $donated_collections = new Donated_collection(
                 ['art_obj_Id_no' => ++$last,
                 'Date_donate' => $request->input('Date_donate'),
-                'Donor' => $request->get('Donor')
+                'Donor' => $request->get('Donor'),
             ]);
             $donated_collections->save();
             $art_objs = new Art_obj(
@@ -125,7 +125,7 @@ class Art_objController extends Controller
             $success = false;
         }
         if($success){
-            return redirect()->back()->with('success','The file is already uploaded.');
+            return redirect()->back()->with('success','The file is already uploaded. Please wait for permission. Your art will be displayed.');
         }
         else{
             return redirect()->back()->with('unsuccess','Something fail.');

@@ -11,17 +11,26 @@
                                                 ARTS
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                                                <a class="dropdown-item" href="/painting">painting</a>
-                                                <a class="dropdown-item" href="/sculpture">sculpture</a>
-                                                <a class="dropdown-item" href="/statue">statue</a>
-                                                <a class="dropdown-item" href="/other">others</a>
+                                                <a class="dropdown-item" href="/painting">Painting</a>
+                                                <a class="dropdown-item" href="/sculpture">Sculpture</a>
+                                                <a class="dropdown-item" href="/statue">Statue</a>
+                                                <a class="dropdown-item" href="/other">Others</a>
                                         </div>
                                 </li>
+
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                DONATIONS
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                                                <a class="dropdown-item" href="/artfromyou">Arts</a>
+                                                <a class="dropdown-item" href="/donation">Donate</a>
+                                        </div>
+                                </li>
+
+
                                 <li class="nav-item">
                                         <a class="nav-link" href="/artist">ARTIST</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="/donation">DONATIONS</a>
                                 </li>
                                 <li class="nav-item">
                                         <a class="nav-link" href="/exhibition">EXHIBITION</a>
